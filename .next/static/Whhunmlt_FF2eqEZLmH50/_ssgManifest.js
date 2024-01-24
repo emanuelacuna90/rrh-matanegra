@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fcontact","\u002F","\u002Fvehicles\u002F[vehicle]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
