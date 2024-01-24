@@ -1,8 +1,12 @@
 @import "../../../styles/baseline/_styles";
 
 .logoSliderContent{
+    position: relative;
     text-align: center;
+    padding: 90px 0;
+ @include respond-to($bp-sm){
     padding: 30px 0;
+ }
     &>div{
         height: 250px;
 
@@ -14,4 +18,20 @@
             }
         }
     }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        height: 4px;
+        background: linear-gradient(to right,  #D0E5F3, #214440,);
+        z-index: 1;
+        max-width: 1300px;
+    }
+}
+
+.title{
+    margin-bottom: 40px;
 }

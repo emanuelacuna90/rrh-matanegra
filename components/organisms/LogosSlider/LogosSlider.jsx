@@ -13,7 +13,7 @@ const LogosSlider = () => {
   return (
     <section className={styles.logoSliderContent} id="empresas">
        <Container>
-        <Title>Empresas que confian en nuestro porceso</Title>
+        <Title className={styles.title} size="xl" color="black">Empresas que <strong>confian en nuestro porceso</strong></Title>
         <Swiper {...swiperProps} modules={[Autoplay, EffectFade, Navigation]}>
             {slides.map(({ id, text }) => (
             <SwiperSlide key={id}>

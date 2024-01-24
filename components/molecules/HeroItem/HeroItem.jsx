@@ -9,8 +9,9 @@ const HeroItem = ({ imageUrl, text }) => {
     <div className={styles.item}>
       <div className={styles.overlay} />
       <Container className={styles.container}>
-        <Title color="white">
-          TRANSFORMA TU GESTIÓN DE RECURSOS HUMANOS CON LA SOLUCIÓN QUE ESTÁS
+        <span className={styles.prehead}>Mata Negra SRL</span>
+        <Title size="xl" color="white">
+          <strong>TRANSFORMA</strong> TU GESTIÓN DE RECURSOS HUMANOS CON LA <strong>SOLUCIÓN</strong> QUE ESTÁS
           BUSCANDO
         </Title>
         <Paragraph color="white">

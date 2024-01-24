@@ -3,6 +3,11 @@
 .title {
   font-family: $font-primary;
   margin-bottom: 20px;
+  font-weight: 400;
+
+  strong{
+    font-weight: $heavy;
+  }
   
   // Color: Primary
   &.primary {
@@ -17,6 +22,10 @@
   // Color: White
   &.white {
     color: $color-white;
+  }
+
+  &.black{
+    color: $color-black-2;
   }
 
   // Extra Small
@@ -46,6 +55,16 @@
       font-size: rem-calc(38);
       line-height: rem-calc(42);
       font-weight: $heavy;
+    }
+  }
+
+  // Size: Large
+  &.xl {
+    font-size: 35px;
+    line-height: rem-calc(40);
+    @include respond-to($bp-sm){
+      font-size: 22px;
+      line-height: rem-calc(30);
     }
   }
 }

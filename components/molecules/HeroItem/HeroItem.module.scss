@@ -9,7 +9,15 @@
     align-items: center;
   }
 }
-
+.prehead{
+  color: $color-white;
+  border: solid 3px $color-white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: block;
+  width: max-content;
+}
 .text {
   position: relative;
   z-index: 2;
