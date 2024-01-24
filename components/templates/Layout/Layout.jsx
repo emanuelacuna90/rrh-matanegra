@@ -16,7 +16,6 @@ const Layout = ({ children }) => {
       />
       <Menu logo={dataMenu.logo} items={dataMenu.items} />
       <main className={`${styles.main} ${styles['scroll-container']}`}>{children}</main>
-      <Footer items={dataFooter.items} />
     </>
   )
 }
