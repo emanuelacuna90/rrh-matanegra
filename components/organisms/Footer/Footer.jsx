@@ -16,7 +16,7 @@ const Footer = ({ items }) => {
           {items.map((item, index) => {
             return (
               <Link key={index} href={item.url}>
-                <a className={styles.icon}>
+                <a className={styles.icon} target='_black'>
                   <Image
                     src={`/assets/img/icons/${item.icon}.png`}
                     width={18}

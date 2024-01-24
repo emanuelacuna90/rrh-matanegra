@@ -3,8 +3,13 @@ export const dataFooter = {
   items: [
     {
       icon: 'instagram',
-      url: 'https://www.instagram.com/matanegrasrl/',
+      url: 'https://www.instagram.com/matanegra.consultorarrhh/',
       label: 'Instagram',
+    },
+    {
+      icon: 'linkedin',
+      url: 'https://ar.linkedin.com/company/matanegrasustentable',
+      label: 'Linkedin',
     },
   ],
 }

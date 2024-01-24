@@ -19,7 +19,7 @@
   z-index: 15;
   transition: $global-transition;
   background-color: $green-black;
-  box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
   padding: 10px 0;
 
   @include respond-to($bp-lg) {
@@ -52,7 +52,7 @@
 
     .menu {
       @include respond-to($bp-lg) {
-        max-height: 240px;
+        max-height: 265px;
       }
 
       .menuItems {
@@ -82,7 +82,7 @@
 
   @include respond-to($bp-lg) {
     background-color: $color-white;
-    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
     position: fixed;
     max-height: 65px;
     height: 100vh;
@@ -100,9 +100,48 @@
 .btn {
   display: none;
   cursor: pointer;
+  position: relative;
+  height: 30px;
+  margin-right: 30px;
 
   @include respond-to($bp-lg) {
     display: block;
+  }
+}
+
+.span {
+  background-color: $color-black-2;
+  display: block;
+  height: 2px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s;
+  width: 30px;
+
+  &:first-child {
+    top: 6px;
+  }
+  &:nth-child(2) {
+    top: 17px;
+  }
+  &:nth-child(3) {
+    top: 28px;
+  }
+}
+
+.expanded{
+  &:first-child {
+    top: 16px;
+    transform: rotate(135deg);
+  }
+  &:nth-child(2) {
+    opacity: 0;
+  }
+  &:nth-child(3) {
+    top: 16px;
+    transform: rotate(-135deg);
   }
 }
 
@@ -113,6 +152,7 @@
     transform: translateY(30px);
     transition: initial;
     padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
     opacity: 0;
   }
@@ -132,19 +172,22 @@
 
   @include respond-to($bp-lg) {
     transition: initial;
-    color: $color-secondary;
+    color: $color-black-2;
   }
 
   &:last-child {
     margin: initial;
     background-color: $color-cuarto;
+    @include respond-to($bp-lg){
+      color: $color-white;
+    }
   }
 
   &:hover {
     color: $color-primary;
     border: solid 2px $color-primary;
 
-    &:last-child{
+    &:last-child {
       background-color: transparent;
     }
   }

@@ -1,16 +1,13 @@
 @import "../../../styles/baseline/_styles";
 
 .service {
-    // background-image: url('../../../public/assets/img/bg-services.jpg');
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-    padding: 90px 0;
+    background: linear-gradient(180deg,#f7f2e4,hsla(44,54%,93%,.81) 0%,rgba(213,237,227,0.53) 58%,rgba(213,237,227,30) 90%,#f7f2e4 125%,#f7f2e4 0);
+    padding: 100px 0;
     position: relative;
     text-align: center;
 
     @include respond-to($bp-sm){
-        padding: 50px 0;
+        padding: 50px 10px;
     }
 
     &::after{

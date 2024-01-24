@@ -23,7 +23,7 @@ export const slides = [
   
   export const swiperProps = {
     spaceBetween: 30,
-    loop: false,
+    loop: true,
     pagination: {
       clickable: true,
     },

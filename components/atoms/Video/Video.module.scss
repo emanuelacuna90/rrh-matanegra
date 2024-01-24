@@ -8,6 +8,9 @@
   background-image: url('../../../public/assets/img/hero/bg-hero-image.jpg');
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
   @include respond-to($bp-sm) {
     top: 0;
   }

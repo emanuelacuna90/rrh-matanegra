@@ -28,14 +28,18 @@ export const Menu = ({ logo, items }) => {
           </Link>
 
           <div className={styles.btn} onClick={() => setIsOpen(!isOpen)}>
-            <Image
+            {/* <Image
               src={`/assets/img/icons/${
                 isOpen ? "hamburger-close" : "hamburger"
               }.svg`}
               alt="Hamburger"
               width={32}
               height={28}
-            />
+            /> */}
+
+            <span className={`${styles.span} ${isOpen ? styles.expanded : ''}`}></span>
+            <span className={`${styles.span} ${isOpen ? styles.expanded : ''}`}></span>
+            <span className={`${styles.span} ${isOpen ? styles.expanded : ''}`}></span>
           </div>
 
           <div className={styles.menuItems}>
