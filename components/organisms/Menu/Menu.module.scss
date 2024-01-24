@@ -1,0 +1,157 @@
+@import "../../../styles/baseline/_styles";
+
+.overlay {
+  background-color: $green-black;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  opacity: 0;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  transition: $global-transition;
+  background-color: $green-black;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+  padding: 10px 0;
+
+  @include respond-to($bp-lg) {
+    padding: initial;
+  }
+
+  &:after {
+    content: '';
+    background-color: $color-black-2;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: -45px;
+    top: 0;
+    transform: skewX(-35deg);
+    z-index: -1;
+
+    @include respond-to($bp-lg) {
+      display: none;
+    }
+  }
+
+  &.active {
+    // height: 50%;
+
+    .overlay {
+      display: block;
+      opacity: 1;
+    }
+
+    .menu {
+      @include respond-to($bp-lg) {
+        max-height: 240px;
+      }
+
+      .menuItems {
+        @include respond-to($bp-lg) {
+          transform: initial;
+          opacity: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+
+          .item {
+            margin: initial;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+  z-index: 8;
+  padding: 2.5px 0;
+  transition: $global-transition;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    background-color: $color-white;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+    position: fixed;
+    max-height: 65px;
+    height: 100vh;
+    padding: 6px 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: none;
+  cursor: pointer;
+
+  @include respond-to($bp-lg) {
+    display: block;
+  }
+}
+
+.menuItems {
+  transition: $global-transition;
+
+  @include respond-to($bp-lg) {
+    transform: translateY(30px);
+    transition: initial;
+    padding-top: 30px;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.item {
+  color: $color-white;
+  padding: 3px 6px;
+  border-radius: 8px;
+  transition: $global-transition;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-right: 8px;
+  position: relative;
+  border: solid 2px transparent;
+
+  @include respond-to($bp-lg) {
+    transition: initial;
+    color: $color-secondary;
+  }
+
+  &:last-child {
+    margin: initial;
+  }
+
+  &:hover {
+    color: $color-primary;
+    border: solid 2px $color-primary;
+  }
+}
+
+.btn-whatsapp {
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  background: transparent;
+  border: initial;
+  width: 45px;
+  height: 45px;
+}

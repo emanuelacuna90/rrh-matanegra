@@ -1,0 +1,13 @@
+@import "../../../styles/baseline/_styles";
+
+.btn-whatsapp {
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  background: transparent;
+  border: initial;
+  width: 45px;
+  height: 45px;
+  z-index: 11;
+}

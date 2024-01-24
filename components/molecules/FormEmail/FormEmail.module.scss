@@ -1,0 +1,39 @@
+@import "../../../styles/baseline/_styles";
+
+.form {
+ display: flex;
+ flex-direction: column;
+
+ label{
+  color: $color-white;
+}
+}
+
+.buttonContainer {
+  margin-top: 40px;
+}
+
+.button {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  @include respond-to($bp-sm) {
+    max-width: initial !important;
+    width: 100%;
+  }
+}
+.contentInputs{
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  @include respond-to($bp-sm){
+    flex-direction: column;
+    gap: 0;
+  }
+
+  div{
+    width: 100%;
+  }
+}

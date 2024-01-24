@@ -1,0 +1,130 @@
+$hover-duration: 0.2s;
+$global-transition: all $hover-duration ease-in;
+
+.hover-animation-basic {
+	transition: all $hover-duration ease-in;
+}
+
+//$duration-xxshort: 50ms; // not used yet
+//$duration-xshort: 100ms; // not used yet
+$duration-short: 200ms;
+$duration-medium: 300ms;
+$duration-long: 400ms;
+$duration-xlong: 500ms;
+// $duration-xxlong: 600ms; // not used yet
+
+
+// Anim Play
+.anim-play {
+	animation-play-state: running !important;
+}
+
+// Fade In Up
+@keyframes fade-in-up {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.anim-fade-in-up {
+	animation: fade-in-up 0.7s ease;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-play-state: paused;
+}
+
+// Fade In Left
+@keyframes fade-in-left {
+	from {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.anim-fade-in-left {
+	animation: fade-in-left 0.7s ease;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-play-state: paused;
+}
+
+// Fade In Right
+@keyframes fade-in-right {
+	from {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.anim-fade-in-right {
+	animation: fade-in-right 0.7s ease;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-play-state: paused;
+}
+
+// Anim Delay
+.anim-delay-1 {
+	animation-delay: 0ms;
+}
+
+.anim-delay-2 {
+	animation-delay: 100ms;
+}
+
+.anim-delay-3 {
+	animation-delay: 200ms;
+}
+
+.anim-delay-4 {
+	animation-delay: 300ms;
+}
+
+.anim-delay-5 {
+	animation-delay: 400ms;
+}
+
+.anim-delay-6 {
+	animation-delay: 500ms;
+}
+
+.anim-delay-7 {
+	animation-delay: 600ms;
+}
+.anim-delay-8 {
+	animation-delay: 700ms;
+}
+.anim-delay-9 {
+	animation-delay: 800ms;
+}
+.anim-delay-10 {
+	animation-delay: 900ms;
+}
+.anim-delay-11 {
+	animation-delay: 1000ms;
+}
+.anim-delay-12 {
+	animation-delay: 1100ms;
+}
+.anim-delay-13 {
+	animation-delay: 1200ms;
+}
+.anim-delay-14 {
+	animation-delay: 1300ms;
+}

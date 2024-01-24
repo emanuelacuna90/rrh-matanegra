@@ -1,0 +1,13 @@
+@import "../../../styles/baseline/_styles";
+
+.main {
+  padding-top: 74px;
+
+  @include respond-to($bp-lg) {
+    padding-top: 65px;
+  }
+}
+
+.scroll-container{
+  scroll-behavior: smooth;
+}

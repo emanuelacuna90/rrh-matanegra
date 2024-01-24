@@ -1,0 +1,17 @@
+@import "../../../styles/baseline/_styles";
+
+.logoSliderContent{
+    text-align: center;
+    padding: 30px 0;
+    &>div{
+        height: 250px;
+
+        &>div{
+            height: 100%;
+            max-height: 170px;
+            &div:last-child{
+                display: none !important;
+            }
+        }
+    }
+}

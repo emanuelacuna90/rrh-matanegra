@@ -1,0 +1,49 @@
+@import "../../../styles/baseline/_styles";
+
+.item {
+  position: relative;
+  overflow: hidden;
+  
+  @include respond-above($bp-sm) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.text {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  padding-top: 20px;
+
+  @include respond-above($bp-sm) {
+    padding-top: initial;
+  }
+
+  @include respond-to($bp-lg) {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  @include respond-to($bp-md) {
+    padding-top: 40px;
+  }
+}
+
+.overlay {
+  background-color: rgba($color-black, .5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  padding: 200px 30px;
+  @include respond-to($bp-l){
+    padding: 110px 30px;
+  }
+  @include respond-to($bp-lg) {
+    text-align: center;
+  }
+}

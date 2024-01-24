@@ -1,0 +1,20 @@
+@import "../../../styles/baseline/_styles";
+
+.video {
+  position: absolute;
+  left: 0;
+  top: -30px;
+  z-index: -2;
+  background-image: url('../../../public/assets/img/hero/bg-hero-image.jpg');
+  width: 100%;
+  height: 100%;
+  @include respond-to($bp-sm) {
+    top: 0;
+  }
+  video {
+    width: 100vw;
+    @include respond-to($bp-sm) {
+        display: none;
+      }
+  }
+}
