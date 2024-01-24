@@ -1002,7 +1002,7 @@ const Menu = ({ logo , items  })=>{
                             href: "/",
                             children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                 style: {
-                                    display: 'flex'
+                                    display: "flex"
                                 },
                                 children: logo && /*#__PURE__*/ jsx_runtime_.jsx(next_image["default"], {
                                     src: logo,
@@ -1019,7 +1019,7 @@ const Menu = ({ logo , items  })=>{
                             onClick: ()=>setIsOpen(!isOpen)
                             ,
                             children: /*#__PURE__*/ jsx_runtime_.jsx(next_image["default"], {
-                                src: `/assets/img/icons/${isOpen ? 'hamburger-close' : 'hamburger'}.svg`,
+                                src: `/assets/img/icons/${isOpen ? "hamburger-close" : "hamburger"}.svg`,
                                 alt: "Hamburger",
                                 width: 32,
                                 height: 28

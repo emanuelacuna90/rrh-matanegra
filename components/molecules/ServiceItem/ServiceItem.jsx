@@ -8,13 +8,18 @@ const ServiceItem = ({ imageUrl, title, text, className }) => {
   return (
     <div className={`${styles.serviceItem} ${className}`}>
       <div className={`${styles.cardFront}`}>
-        <Image src={imageUrl} alt="Icon Card" layout="fill" objectFit="contain" />
-        <Title color="white" className={`${styles.title}`}>{title}</Title>
+        <Image
+          src={imageUrl}
+          alt="Icon Card"
+          layout="fill"
+          objectFit="contain"
+        />
+        <Title color="white" className={`${styles.title}`}>
+          {title}
+        </Title>
       </div>
       <div className={`${styles.cardBack}`}>
-        <P>
-         {text}
-        </P>
+        <P>{text}</P>
       </div>
     </div>
   );

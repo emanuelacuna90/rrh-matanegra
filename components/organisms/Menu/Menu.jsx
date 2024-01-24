@@ -1,11 +1,11 @@
-import styles from './Menu.module.scss'
-import Image from 'next/image'
-import { useState } from 'react'
-import Link from 'next/link'
-import Container from '../../atoms/Container/Container'
+import styles from "./Menu.module.scss";
+import Image from "next/image";
+import { useState } from "react";
+import Link from "next/link";
+import Container from "../../atoms/Container/Container";
 
 export const Menu = ({ logo, items }) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className={`${styles.header} ${isOpen && styles.active} `}>
@@ -13,7 +13,7 @@ export const Menu = ({ logo, items }) => {
       <nav className={`${styles.menu} ${isOpen && styles.active}`}>
         <Container className={styles.container}>
           <Link href="/">
-            <a style={{ display: 'flex' }}>
+            <a style={{ display: "flex" }}>
               {logo && (
                 <Image
                   src={logo}
@@ -29,7 +29,9 @@ export const Menu = ({ logo, items }) => {
 
           <div className={styles.btn} onClick={() => setIsOpen(!isOpen)}>
             <Image
-              src={`/assets/img/icons/${isOpen ? 'hamburger-close' : 'hamburger'}.svg`}
+              src={`/assets/img/icons/${
+                isOpen ? "hamburger-close" : "hamburger"
+              }.svg`}
               alt="Hamburger"
               width={32}
               height={28}
@@ -47,7 +49,7 @@ export const Menu = ({ logo, items }) => {
         </Container>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
