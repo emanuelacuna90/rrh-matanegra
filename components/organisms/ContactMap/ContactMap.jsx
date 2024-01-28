@@ -29,7 +29,6 @@ const ContactMap = ({ title, copy }) => {
         } ${classAnimPlay}`}
       />
 
-      <Map />
     </section>
   )
 }
