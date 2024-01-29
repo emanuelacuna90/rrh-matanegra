@@ -14,11 +14,10 @@ const Accordion = ({ title, text, className, onClick }) => {
         onClick={() => handleClick()}
         
       >
-        <h3 className={styles.titleAccordion}>{title}
-            <span className={styles.plusIcon}>
-
-            </span>
-        </h3>
+       <div className={styles.titleContainer}>
+          <h3 className={styles.titleAccordion}>{title}</h3>
+          <span className={styles.plusIcon}></span>
+       </div>
         <div className={`${styles.accordionText} ${isOpen ? styles.accordionOpen : styles.accordionClose}`}>
           <div
             className={`${styles.accordionInfo}`}

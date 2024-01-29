@@ -12,11 +12,18 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  .titleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   h3{
     margin-bottom: initial;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
   }
 
   .plusIcon{
@@ -87,7 +94,7 @@
 }
 
 .rotatePlus{
-    .titleAccordion {
+    .titleContainer {
         .plusIcon{
             &::after{
                 transform: rotate(0deg);
