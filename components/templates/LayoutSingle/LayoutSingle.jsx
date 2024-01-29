@@ -7,6 +7,7 @@ import Layout from '../Layout/Layout'
 const LayoutSingle = ({ vehicleData }) => {
   return (
     <Layout>
+      <SingleCard {...vehicleData} />
       <Contact
         title={data.title}
         copy={data.copy}
