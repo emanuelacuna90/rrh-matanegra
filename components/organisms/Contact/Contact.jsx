@@ -14,6 +14,7 @@ export const Contact = ({ title, copy, templateId, layout }) => {
 
   const emailJsServiceId = 'service_gulzkvm'
   const emailJsContactTemplateId = 'template_s8kgr86'
+  const emailJsPublicKey = "d_nctSg1lG-SrXZwb"
 
   return (
     <section className={styles.contact} ref={refAnimation} id="contact">
@@ -27,6 +28,7 @@ export const Contact = ({ title, copy, templateId, layout }) => {
           layout={layout}
           serviceId={emailJsServiceId}
           templateId={emailJsContactTemplateId}
+          publicKey={emailJsPublicKey}
         />
       </Container>
     </section>

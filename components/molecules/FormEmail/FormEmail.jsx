@@ -3,7 +3,6 @@ import styles from './FormEmail.module.scss'
 import { Form, Input, Select, DatePicker, InputNumber, Spin } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons'
 import Button from '../../atoms/Button/Button'
-import { hourOptions, placeOptions } from '../../../data/dataContact'
 import emailjs from '@emailjs/browser'
 import { toastError, toastSuccess } from '../../../utils/toast'
 import { useState } from 'react'
@@ -12,7 +11,7 @@ const { TextArea } = Input
 
 const antIcon = <LoadingOutlined style={{ fontSize: 18, color: 'white', marginLeft: 10 }} spin />
 
-export const FormEmail = ({ layout = 'contact', serviceId, templateId }) => {
+export const FormEmail = ({ layout = 'contact', serviceId, templateId, publicKey }) => {
   const [form] = Form.useForm()
   const [isLoading, setIsLoading] = useState()
   const isVehicleLayout = layout === 'vehicle'
@@ -29,11 +28,8 @@ export const FormEmail = ({ layout = 'contact', serviceId, templateId }) => {
       dateEnd,
     }
 
-    const emailJsServiceId = 'service_gulzkvm'
-    const emailJsContactTemplateId = 'template_s8kgr86'
-
     emailjs
-      .send(emailJsServiceId, emailJsContactTemplateId, dataForm)
+      .send(serviceId, templateId, dataForm, publicKey)
       .then((res) => {
         console.log('res', res)
         toastSuccess({ text: 'Enviado con exito' })
@@ -57,7 +53,7 @@ export const FormEmail = ({ layout = 'contact', serviceId, templateId }) => {
         </Form.Item>
 
         <Form.Item name="phone" label="Teléfono">
-          <InputNumber />
+          <Input />
         </Form.Item>
       </div>
 
