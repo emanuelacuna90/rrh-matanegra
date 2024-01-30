@@ -26,21 +26,25 @@
     padding: initial;
   }
 
-  // &:after {
-  //   content: '';
-  //   background-color: $color-black-2;
-  //   width: 40%;
-  //   height: 100%;
-  //   position: absolute;
-  //   right: -45px;
-  //   top: 0;
-  //   transform: skewX(-35deg);
-  //   z-index: -1;
+  .icon-social{
+    display: flex;
+    gap: 30px;
 
-  //   @include respond-to($bp-lg) {
-  //     display: none;
-  //   }
-  // }
+    @include respond-to($bp-lg) {
+      background-color: $green-black;
+      border-radius: 2px;
+    }
+
+    a{
+      padding: 4px 3px 0;
+      border: 2px solid transparent;
+      transition: .2s;
+      border-radius: 2px;
+      &:hover{
+        border: solid 2px $color-primary;
+      }
+    }
+  }
 
   &.active {
     // height: 50%;
