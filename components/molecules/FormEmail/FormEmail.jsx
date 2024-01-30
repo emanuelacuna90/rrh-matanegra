@@ -12,7 +12,7 @@ const { TextArea } = Input
 
 const antIcon = <LoadingOutlined style={{ fontSize: 18, color: 'white', marginLeft: 10 }} spin />
 
-export const FormEmail = ({ layout = 'contact', serviceId, templateId, publicKey }) => {
+export const FormEmail = ({ layout = 'contact', serviceId, templateId }) => {
   const [form] = Form.useForm()
   const [isLoading, setIsLoading] = useState()
   const isVehicleLayout = layout === 'vehicle'
@@ -29,8 +29,11 @@ export const FormEmail = ({ layout = 'contact', serviceId, templateId, publicKey
       dateEnd,
     }
 
+    const emailJsServiceId = 'service_gulzkvm'
+    const emailJsContactTemplateId = 'template_s8kgr86'
+
     emailjs
-      .send(serviceId, templateId, dataForm, publicKey)
+      .send(emailJsServiceId, emailJsContactTemplateId, dataForm)
       .then((res) => {
         console.log('res', res)
         toastSuccess({ text: 'Enviado con exito' })

@@ -3,7 +3,6 @@ import styles from './Contact.module.scss'
 import Container from '../../atoms/Container/Container'
 import FormEmail from '../../molecules/FormEmail/FormEmail'
 import Heading from '../../molecules/Heading/Heading'
-import { emailJsServiceId, emailJsPublicKey } from '../../../utils/constants'
 import { useInView } from 'react-intersection-observer'
 
 export const Contact = ({ title, copy, templateId, layout }) => {
@@ -12,6 +11,9 @@ export const Contact = ({ title, copy, templateId, layout }) => {
   })
 
   const classAnimPlay = inView && styles['anim-play']
+
+  const emailJsServiceId = 'service_gulzkvm'
+  const emailJsContactTemplateId = 'template_s8kgr86'
 
   return (
     <section className={styles.contact} ref={refAnimation} id="contact">
@@ -24,8 +26,7 @@ export const Contact = ({ title, copy, templateId, layout }) => {
         <FormEmail
           layout={layout}
           serviceId={emailJsServiceId}
-          templateId={templateId}
-          publicKey={emailJsPublicKey}
+          templateId={emailJsContactTemplateId}
         />
       </Container>
     </section>

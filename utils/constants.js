@@ -1,6 +1,6 @@
 export const emailJsPublicKey = 'bV9bIPIyIreG1Oz82'
-export const emailJsServiceId = 'service_erdqsar'
-export const emailJsContactTemplateId = 'template_uyvnkx4'
+export const emailJsServiceId = 'service_gulzkvm'
+export const emailJsContactTemplateId = 'template_s8kgr86'
 export const emailJsSingleTemplateId = 'template_ymmpi5e'
 export const googleMapCordinates = [-38.9512565305277, -68.05173677975772]
 export const googleMapDirection =

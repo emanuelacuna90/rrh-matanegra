@@ -18,7 +18,7 @@ const Accordions = ({ title, text, className }) => {
      <Container className={styles.accordionContainer}>
      <Title size='sm' className={styles.titleTabbers} color="black">Acompañamos tu empresa para optimizar sus procesos y potenciar su rendimiento</Title>
        {dataTab.map((item, index)=>{
-       return  (<Accordion title={item.title} text={item.text}/>)
+       return  (<Accordion key={index} title={item.title} text={item.text}/>)
        })}
     </Container>
    </section>
