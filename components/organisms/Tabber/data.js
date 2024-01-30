@@ -129,7 +129,7 @@ export const dataTab = [
         title: 'HABERES',
         text: `
         <span>PAYROLL OUTSOURCING & ASSET SETTLEMENT</span>
-        <h3>TERCIARIZACUIN DE NOMINA & LIQUIDACIÓN DE HABERES</h3>
+        <h3>TERCIARIZACIÓN DE NÓMINA & LIQUIDACIÓN DE HABERES</h3>
         <p>La tercerización de la liquidación de haberes no solo implica el ahorro de costos, sino que le permite a tu organización mantener y ampliar su competitividad. Nuestros clientes reciben de nuestro servicio una atención profesional, confidencialidad en la administración de la información, seguridad en el proceso de liquidación de sueldos y actualización permanente de la información.</p> 
         
         <h4>Algunos de nuestros servicios:</h4>
@@ -200,9 +200,9 @@ export const dataTab = [
     },
     {
         id: 7,
-        title: 'SIG',
+        title: 'SGI',
         text: `
-        <span>SIG</span>
+        <span>SGI</span>
         <h3>SISTEMA DE GESTIÓN INTEGRAL</h3>
         <p> Ofrecemos la orientación, guía y acompañamiento por parte de nuestro equipo a través de cada etapa del proceso de implementación de las Normas ISO 9001, 14001 e 45001 con el fin de generar sinergia, mayor eficiencia, eficacia, economía y celeridad en los procesos encaminados a alcanzar resultados, realizando un ciclo de mejora continua lo cual te permitirá calificar generando un valor agregado a tus servicios.
         Analizamos tu organización, identificamos tus necesidades y diseñamos un sistema de gestión de calidad que se adapte perfectamente a tu empresa.

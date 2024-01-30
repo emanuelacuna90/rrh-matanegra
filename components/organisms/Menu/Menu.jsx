@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Container from "../../atoms/Container/Container";
 
-export const Menu = ({ logo, items }) => {
+export const Menu = ({ logo, items, socials }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -27,16 +27,24 @@ export const Menu = ({ logo, items }) => {
             </a>
           </Link>
 
-          <div className={styles.btn} onClick={() => setIsOpen(!isOpen)}>
-            {/* <Image
-              src={`/assets/img/icons/${
-                isOpen ? "hamburger-close" : "hamburger"
-              }.svg`}
-              alt="Hamburger"
-              width={32}
-              height={28}
-            /> */}
+          <div className={styles['icon-social']}>
+          {socials.map((item, index) => {
+            return (
+              <Link key={index} href={item.url}>
+                <a className={styles.icon} target='_black'>
+                  <Image
+                    src={`/assets/img/icons/${item.icon}.png`}
+                    width={18}
+                    height={18}
+                    objectFit="contain"
+                  />
+                </a>
+              </Link>
+            )
+          })}
+        </div>
 
+          <div className={styles.btn} onClick={() => setIsOpen(!isOpen)}>
             <span className={`${styles.span} ${isOpen ? styles.expanded : ''}`}></span>
             <span className={`${styles.span} ${isOpen ? styles.expanded : ''}`}></span>
             <span className={`${styles.span} ${isOpen ? styles.expanded : ''}`}></span>

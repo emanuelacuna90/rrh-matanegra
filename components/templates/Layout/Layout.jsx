@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         numberPhone={dataWhatsapp.numberPhone}
         message={dataWhatsapp.message}
       />
-      <Menu logo={dataMenu.logo} items={dataMenu.items} />
+      <Menu logo={dataMenu.logo} items={dataMenu.items} socials={dataMenu.socials}/>
       <main className={`${styles.main} ${styles['scroll-container']}`}>{children}</main>
     <Footer items={dataFooter.items}/>
     </>

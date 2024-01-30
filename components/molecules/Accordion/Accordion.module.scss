@@ -62,6 +62,9 @@
         margin-bottom: 10px;
         display: block;
         width: max-content;
+        @include respond-to($bp-sm){
+          max-width: 250px;
+        }
       }
     
       h3 {
@@ -69,6 +72,10 @@
         font-size: 22px;
         line-height: 26px;
         margin-bottom: 15px;
+
+        @include respond-to($bp-sm){
+          max-width: 250px;
+        }
       }
     
       h4 {
