@@ -1,0 +1,31 @@
+@import "../../../styles/baseline/_styles";
+
+.grid-cards{
+    padding: 70px 0;
+
+    @include respond-to($bp-sm){
+        padding: 50px 0;
+    }
+}
+
+.container {
+    max-width: 949px;
+    text-align: center;
+}
+
+.content-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 40px;
+
+    @include respond-to($bp-l){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to($bp-sm){
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+}

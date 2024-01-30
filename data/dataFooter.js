@@ -8,7 +8,7 @@ export const dataFooter = {
     },
     {
       icon: 'linkedin',
-      url: 'https://www.linkedin.com/company/mata-negra-consultora-integral-de-capital-humano/',
+      url: 'https://ar.linkedin.com/company/matanegrasustentable',
       label: 'Linkedin',
     },
   ],

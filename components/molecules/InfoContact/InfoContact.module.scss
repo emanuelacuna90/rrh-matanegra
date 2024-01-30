@@ -1,0 +1,23 @@
+@import "../../../styles/baseline/_styles";
+
+.infoContact {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-weight: $semibold;
+}
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: $color-primary;
+
+  p {
+    color: $color-primary !important;
+    font-weight: $medium;
+  }
+}
