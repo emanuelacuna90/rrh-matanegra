@@ -4,7 +4,7 @@ import LayoutHome from '../components/templates/LayoutHome/LayoutHome'
 export default function Home() {
   return (
     <>
-      <HeadSeo title="Matanegra SRL" content="Estamos para ayudarte. El mejor precio asegurado" />
+      <HeadSeo title="Matanegra SRL" content="Estamos para ayudarte. Ayudamos a impulsar el crecimiento" />
       <LayoutHome />
     </>
   )

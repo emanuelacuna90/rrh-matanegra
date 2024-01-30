@@ -1,11 +1,11 @@
 export const slides = [
   {
     id: 1,
-    text: 'Estamos para ayudarte. El mejor precio asegurado',
+    text: 'Estamos para ayudarte.',
   },
   {
     id: 2,
-    text: 'Vení y recorré las rutas patagónicas, no te vas a arrepentir.',
+    text: 'Ayudamos a impulsar el crecimiento.',
   },
 ]
 
