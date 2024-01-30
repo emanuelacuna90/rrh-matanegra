@@ -17,7 +17,7 @@ const LogosSlider = () => {
         <Swiper {...swiperProps} modules={[Autoplay, EffectFade, Navigation]}>
             {slides.map(({ id, text }) => (
             <SwiperSlide key={id}>
-                <Logos imageUrl={`/assets/brands/logo${id}.jpeg`} />
+                <Logos imageUrl={`/assets/brands/logo${id}.png`} />
             </SwiperSlide>
             ))}
         </Swiper>
