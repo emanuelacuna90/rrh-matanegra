@@ -3,4 +3,9 @@
 .logosContent{
     width: 160px;
     max-width: 160px;
+    span{
+        img{
+            filter: grayscale(100%);
+        }
+    }
 }
