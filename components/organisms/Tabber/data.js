@@ -38,7 +38,7 @@ export const dataTab = [
         id: 2,
         title: 'DESARROLLO',
         text: `
-        <span>TRAINING, DEVELOPMENT AND WORK CLIMATE</span>
+        <span>TRAINING, DEVELOPMENT AND WORK ENVIRONMENT</span>
         <h3>CAPACITACION, DESARROLLO Y CLIMA LABORAL</h3>
         <p> Brindamos desarrollo de habilidades y herramientas para que puedas aplicar en tu empresa, según las necesidades. A través de las diferentes <strong>experiencias diseñamos metodologías de trabajo, aprendizaje y desarrollo,</strong> con el objeto de fortalecer las capacidades de líderes y equipos.</p>   
         <p>Implementamos procesos de <strong>Gestión del desempeño,</strong> en busca de los mejores resultados para tu organización.</p>
