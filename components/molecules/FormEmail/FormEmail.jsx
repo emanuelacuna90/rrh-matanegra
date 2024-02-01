@@ -29,27 +29,27 @@ export const FormEmail = ({ layout = 'contact', serviceId, alternateServiceId, t
       dateEnd,
     };
 
-    const sendEmail = (selectedServiceId) => {
-      emailjs
-        .send(selectedServiceId, templateId, dataForm, publicKey)
+    const sendEmail = (selectedServiceId, template, keyPucblic) => {
+  
+      selectedServiceId.forEach((service, index) => {
+         emailjs
+        .send(service, template[index], dataForm, keyPucblic[index])
         .then((res) => {
-          console.log(`Email enviado con éxito a ${selectedServiceId}`, res);
+          console.log(`Email enviado con éxito a ${service}`, res);
           toastSuccess({ text: 'Enviado con éxito' });
           form.resetFields();
         })
         .catch((error) => {
           toastError({ text: error?.text ? error?.text : error });
-          console.log(`Error al enviar email a ${selectedServiceId}`, error);
+          console.log(`Error al enviar email a ${service}`, error);
         })
         .finally(() => {
           setIsLoading(false);
         });
+      });
     };
 
-    sendEmail(serviceId);
-    if (alternateServiceId) {
-      sendEmail(alternateServiceId);
-    }
+    sendEmail(serviceId, templateId, publicKey);
   };
 
   return (
