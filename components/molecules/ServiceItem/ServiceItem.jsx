@@ -11,8 +11,9 @@ const ServiceItem = ({ imageUrl, title, text, className }) => {
         <Image
           src={imageUrl}
           alt="Icon Card"
-          layout="fill"
           objectFit="contain"
+          width="70"
+          height='70'
         />
         <Title color="white" className={`${styles.title}`}>
           {title}

@@ -126,10 +126,10 @@ export const dataTab = [
     },
     {
         id: 5,
-        title: 'TERCIARIZACUIN DE NOMINA & LIQUIDACIÓN DE HABERES',
+        title: 'TERCIARIZACIÓN DE NOMINA & LIQUIDACIÓN DE HABERES',
         text: `
         <span>PAYROLL OUTSOURCING & ASSET SETTLEMENT</span>
-        <h3>TERCIARIZACUIN DE NOMINA & LIQUIDACIÓN DE HABERES</h3>
+        <h3>TERCIARIZACIÓN DE NÓMINA & LIQUIDACIÓN DE HABERES</h3>
         <p>La tercerización de la liquidación de haberes no solo implica el ahorro de costos, sino que le permite a tu organización mantener y ampliar su competitividad. Nuestros clientes reciben de nuestro servicio una atención profesional, confidencialidad en la administración de la información, seguridad en el proceso de liquidación de sueldos y actualización permanente de la información.</p> 
         
         <h4>Algunos de nuestros servicios:</h4>
@@ -200,7 +200,7 @@ export const dataTab = [
     },
     {
         id: 7,
-        title: 'SIG',
+        title: 'SGI',
         text: `
         <span>SISTEMA DE GESTIÓN INTEGRAL</span>
         <h3>SISTEMA DE GESTIÓN INTEGRAL</h3>

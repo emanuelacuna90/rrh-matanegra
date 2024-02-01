@@ -11,38 +11,46 @@ const { TextArea } = Input
 
 const antIcon = <LoadingOutlined style={{ fontSize: 18, color: 'white', marginLeft: 10 }} spin />
 
-export const FormEmail = ({ layout = 'contact', serviceId, templateId, publicKey }) => {
-  const [form] = Form.useForm()
-  const [isLoading, setIsLoading] = useState()
-  const isVehicleLayout = layout === 'vehicle'
+export const FormEmail = ({ layout = 'contact', serviceId, alternateServiceId, templateId, publicKey }) => {
+  const [form] = Form.useForm();
+  const [isLoading, setIsLoading] = useState(false);
+  const isVehicleLayout = layout === 'vehicle';
 
   const onFinish = (e) => {
-    setIsLoading(true)
+    console.log('Formulario enviado');
+    setIsLoading(true);
 
-    const dateStart = renderDate(new Date(e.dateStart))
-    const dateEnd = renderDate(new Date(e.dateEnd))
+    const dateStart = renderDate(new Date(e.dateStart));
+    const dateEnd = renderDate(new Date(e.dateEnd));
 
     const dataForm = {
       ...e,
       dateStart,
       dateEnd,
-    }
+    };
 
-    emailjs
-      .send(serviceId, templateId, dataForm, publicKey)
-      .then((res) => {
-        console.log('res', res)
-        toastSuccess({ text: 'Enviado con exito' })
-        form.resetFields()
-      })
-      .catch((error) => {
-        toastError({ text: error?.text ? error?.text : error })
-        console.log('error', error)
-      })
-      .finally(() => {
-        setIsLoading(false)
-      })
-  }
+    const sendEmail = (selectedServiceId) => {
+      emailjs
+        .send(selectedServiceId, templateId, dataForm, publicKey)
+        .then((res) => {
+          console.log(`Email enviado con éxito a ${selectedServiceId}`, res);
+          toastSuccess({ text: 'Enviado con éxito' });
+          form.resetFields();
+        })
+        .catch((error) => {
+          toastError({ text: error?.text ? error?.text : error });
+          console.log(`Error al enviar email a ${selectedServiceId}`, error);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    };
+
+    sendEmail(serviceId);
+    if (alternateServiceId) {
+      sendEmail(alternateServiceId);
+    }
+  };
 
   return (
     <Form layout="vertical" className={styles.form} onFinish={onFinish}>

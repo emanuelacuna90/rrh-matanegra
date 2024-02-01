@@ -7,7 +7,7 @@ export const dataItem = [
   },
   {
     id: 2,
-    title: `CAPACITACION, DESARROLLO & CLIMA LABORAL (Training, Development and Work Climate)`,
+    title: `CAPACITACION, DESARROLLO & CLIMA LABORAL (Training, Development and Work Environment)`,
     text: 'Te ofrecemos desarrollar habilidades y aplicar conocimientos adquiridos mediante el diseño a medida de cursos y talleres teóricos/prácticos sobre diferentes temáticas hard y soft para que puedas aplicar en tu empresa, según las necesidades.',
   },
   {

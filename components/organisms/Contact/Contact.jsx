@@ -13,6 +13,7 @@ export const Contact = ({ title, copy, templateId, layout }) => {
   const classAnimPlay = inView && styles['anim-play']
 
   const emailJsServiceId = 'service_gulzkvm'
+  const emailJsServiceIdTwo  = "service_o3x836j"
   const emailJsContactTemplateId = 'template_s8kgr86'
   const emailJsPublicKey = "d_nctSg1lG-SrXZwb"
 
@@ -29,6 +30,7 @@ export const Contact = ({ title, copy, templateId, layout }) => {
           serviceId={emailJsServiceId}
           templateId={emailJsContactTemplateId}
           publicKey={emailJsPublicKey}
+          // alternateServiceId={emailJsServiceIdTwo}
         />
       </Container>
     </section>

@@ -13,7 +13,7 @@ export const Menu = ({ logo, items, socials }) => {
       <nav className={`${styles.menu} ${isOpen && styles.active}`}>
         <Container className={styles.container}>
           <Link href="/">
-            <a style={{ display: "flex" }}>
+            <a style={{ display: "flex" }} className={styles.brand}>
               {logo && (
                 <Image
                   src={logo}
