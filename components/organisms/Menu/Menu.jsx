@@ -37,6 +37,7 @@ export const Menu = ({ logo, items, socials }) => {
                     width={18}
                     height={18}
                     objectFit="contain"
+                    alt="Icon Social"
                   />
                 </a>
               </Link>

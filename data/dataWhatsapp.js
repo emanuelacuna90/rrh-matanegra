@@ -1,5 +1,5 @@
 export const dataWhatsapp = {
   logo: '/assets/img/whatsapp.png',
-  numberPhone: '5492994650590',
+  numberPhone: '5492995070570',
   message: 'Hola, quiero realizar una consulta:',
 }
